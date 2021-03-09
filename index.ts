@@ -43,6 +43,7 @@ app.get('/balance',
     }
     catch (e) {
       //response in case of invalid token
+      res.json({ message : "Invalid username or password" })
     }
   })
 
